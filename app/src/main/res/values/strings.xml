@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VK_Groups</string>
+    <integer name="com_vk_sdk_AppId">7313018</integer>
+    <string name="showmessage">Показать сообщения</string>
+</resources>
