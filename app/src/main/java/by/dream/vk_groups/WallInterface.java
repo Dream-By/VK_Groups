@@ -7,7 +7,10 @@ import retrofit2.http.Query;
 public interface WallInterface {
 
     @GET("/method/wall.get?")
-    Call<Response> getresponse (@Query("owner_id=") String OWNER_ID, @Query("offset") String OFFSET, @Query("count") String COUNT, @Query("v") String version,@Query("access_token") String access_token);
+    Call<WallInfo> getresponse (@Query("owner_id=") String OWNER_ID, @Query("offset") String OFFSET, @Query("count") String COUNT, @Query("v") String version,@Query("access_token") String access_token);
+
+    @GET("/method/wall.get?")
+    Call<String> getresponseforDebug (@Query("owner_id=") String OWNER_ID, @Query("offset") String OFFSET, @Query("count") String COUNT, @Query("v") String version,@Query("access_token") String access_token);
 
 
 }

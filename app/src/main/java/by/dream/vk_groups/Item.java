@@ -101,7 +101,7 @@ public class Item {
         this.postType = postType;
     }
 
-    public String getText(int i) {
+    public String getText() {
         return text;
     }
 
